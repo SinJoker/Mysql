@@ -13,5 +13,7 @@ SELECT * FROM formula_category ORDER BY category_id;
 
 # 查看表中数据
 SELECT * FROM formula_main;
-SELECT * FROM formula_category;
+SELECT * FROM formula_category ORDER BY category_id;
 SELECT * FROM formula_param;
+SELECT * FROM formula_category_relation;
+SELECT * FROM formula_main_relation;

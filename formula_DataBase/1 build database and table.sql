@@ -52,4 +52,3 @@ CREATE TABLE IF NOT EXISTS formula_param_relation (
  FOREIGN KEY (formula_id) REFERENCES formula_main(formula_id),
  FOREIGN KEY (formula_param_id) REFERENCES formula_param(param_id)
 );
-

@@ -24,13 +24,16 @@ VALUES
 # 事务——插入一条数据
 START TRANSACTION;
 
-    -- 向formula_main表中插入一条数据
+    # 向formula_main表中插入一条数据
     INSERT INTO formula_main (formula_name, format_latex, format_excel, description, example_usage)
     VALUES ('根据流量与管径计算流速', 'v= \\frac{Q_{V}}{S} = \\frac{Q_{V}}{\\frac{1}{4} \\pi d^{2}}', '=(Volume_FLux)/(3600/(0.25*pi()*(Diameter)^2)/1000000)', '根据体积流量、管道直径计算管内流速。', '无');
 
+    # 指定其类目
     INSERT INTO formula_category_relation (formula_id,formula_category_id)
     VALUES
      (1, 4);
+
+    # 指定其用到的参数
     INSERT INTO formula_param_relation (formula_id,formula_param_id)
     VALUES 
     (1, 1),

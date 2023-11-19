@@ -52,7 +52,6 @@ CREATE TABLE IF NOT EXISTS formula_category_relation (
  category_id INT NOT NULL,
  PRIMARY KEY (formula_id, category_id),
  FOREIGN KEY (formula_id) REFERENCES formula_main(formula_id),
-<<<<<<< HEAD
  FOREIGN KEY (formula_category_id) REFERENCES formula_category(category_id)
 );
 
@@ -64,17 +63,3 @@ CREATE TABLE IF NOT EXISTS formula_param_relation (
  FOREIGN KEY (formula_id) REFERENCES formula_main(formula_id),
  FOREIGN KEY (formula_param_id) REFERENCES formula_param(param_id)
 );
-=======
- FOREIGN KEY (category_id) REFERENCES formula_category(category_id)
-);
-
-CREATE TABLE IF NOT EXISTS formula_main_relation (
- formula_main_relation_id INT AUTO_INCREMENT PRIMARY KEY,
- formula_id INT,
- formula_param_id INT,
- PRIMARY KEY (formula_id, formula_param_id),
- FOREIGN KEY (formula_id) REFERENCES formula_main(formula_id),
- FOREIGN KEY (formula_param_id) REFERENCES formula_param(param_id)
-);
-
->>>>>>> c8d38f93776f71d307729083e4208a65739adab5

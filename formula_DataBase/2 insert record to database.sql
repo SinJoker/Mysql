@@ -22,7 +22,7 @@ VALUES
 ;
 
 # 事务——插入一条数据
-
+START TRANSACTION;
     # 向formula_category表中插入一条数据
     INSERT INTO formula_category (
         category_name)

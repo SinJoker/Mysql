@@ -22,15 +22,7 @@ VALUES
 ;
 
 # 事务——插入一条数据
-START TRANSACTION;
-    # 向formula_category表中插入一条数据
-    INSERT INTO formula_category (
-        category_name)
-    VALUES 
-        ('工程计算'),
-        ('会计学'),
-        ('流体力学'),
-        ('传热学');
+BEGIN formula_insertion;
 
     # 向formula_main表中插入一条数据
     INSERT INTO formula_main 
@@ -38,13 +30,13 @@ START TRANSACTION;
     VALUES 
         ('根据流量与管径计算流速', 'v= \\frac{Q_{V}}{S} = \\frac{Q_{V}}{\\frac{1}{4} \\pi d^{2}}', '=(Volume_FLux)/(3600/(0.25*pi()*(Diameter)^2)/1000000)', '根据体积流量、管道直径计算管内流速。', '无');
 
-    # 指定其类目
+    # 指定公式-类别关系的链接
     INSERT INTO formula_category_relation 
         (formula_id,formula_category_id)
     VALUES
         (1, 4);
 
-    # 指定其用到的参数
+    # 指定公式-参数关系的链接
     INSERT INTO formula_param_relation 
         (formula_id,formula_param_id)
     VALUES 
@@ -53,6 +45,5 @@ START TRANSACTION;
         (1, 3),
         (1, 4),
         (1, 5);
-
 -- 提交事务
 COMMIT;

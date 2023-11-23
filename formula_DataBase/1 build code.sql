@@ -7,7 +7,7 @@ USE formula;
 -- 创建公式类目表 formula_category
 CREATE TABLE IF NOT EXISTS formula_category (
     category_id INT AUTO_INCREMENT PRIMARY KEY,
-    category_name VARCHAR(255) UNIQUE NOT NULL
+    category_name VARCHAR(255) UNIQUE NOT NULL 
 );
 
 -- 创建物理量参数表 formula_param

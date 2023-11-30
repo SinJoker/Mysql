@@ -1,5 +1,6 @@
 -- 创建新数据库（如果不存在）
 CREATE DATABASE IF NOT EXISTS section_steel_contour COMMENT "型钢截面数据库" ;
+
 -- 使用数据库（如果不存在） 
 USE section_steel_contour;
 

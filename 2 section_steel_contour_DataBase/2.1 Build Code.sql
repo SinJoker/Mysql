@@ -7,7 +7,7 @@ USE section_steel_contour;
 
 CREATE TABLE
     IF NOT EXISTS hm (
-        hm_id INT AUTO_INCREMENT PRIMARY COMMENT '序号',
+        hm_id INT AUTO_INCREMENT PRIMARY KEY COMMENT '序号',
         hm_standard VARCHAR(255) COMMENT '标准',
         hm_specification VARCHAR(255) NOT NULL COMMENT '规格',
         hm_h DOUBLE NOT NULL COMMENT '高度，单位：mm',
@@ -24,14 +24,13 @@ CREATE TABLE
         hm_ry DOUBLE NOT NULL COMMENT '惯性半径y方向，单位：cm',
         hm_wx DOUBLE NOT NULL COMMENT '截面模数x方向，单位：cm^3',
         hm_wy DOUBLE NOT NULL COMMENT '截面模数y方向，单位：cm^3'
-    ) ;
-    -- COMMENT 'HM型钢'
+    )  COMMENT 'HM型钢';
 
 CREATE TABLE
     IF NOT EXISTS hn (
-        hn_id INT AUTO_INCREMENT PRIMARY COMMENT '序号',
+        hn_id INT AUTO_INCREMENT PRIMARY KEY COMMENT '序号',
         hn_standard VARCHAR(255) COMMENT '标准',
-        hn_specification VARCHAR(255) UNIQUE NOT NULL COMMENT '规格',
+        hn_specification VARCHAR(255) NOT NULL COMMENT '规格',
         hn_h DOUBLE NOT NULL COMMENT '高度，单位：mm',
         hn_b DOUBLE NOT NULL COMMENT '宽度，单位：mm',
         hn_t1 DOUBLE NOT NULL COMMENT '腹板厚度，单位：mm',

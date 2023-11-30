@@ -1,5 +1,6 @@
 -- 创建新数据库（如果不存在）
-CREATE DATABASE IF NOT EXISTS section_steel_contour COMMENT "型钢截面数据库" ;
+CREATE DATABASE IF NOT EXISTS section_steel_contour ;
+ALTER DATABASE section_steel_contour COMMENT='型钢截面数据库';
 
 -- 使用数据库（如果不存在） 
 USE section_steel_contour;
@@ -23,7 +24,8 @@ CREATE TABLE
         hm_ry DOUBLE NOT NULL COMMENT '惯性半径y方向，单位：cm',
         hm_wx DOUBLE NOT NULL COMMENT '截面模数x方向，单位：cm^3',
         hm_wy DOUBLE NOT NULL COMMENT '截面模数y方向，单位：cm^3'
-    ) COMMENT 'HM型钢';
+    ) ;
+    -- COMMENT 'HM型钢'
 
 CREATE TABLE
     IF NOT EXISTS hn (

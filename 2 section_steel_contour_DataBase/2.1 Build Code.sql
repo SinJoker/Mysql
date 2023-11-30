@@ -9,7 +9,7 @@ CREATE TABLE
     IF NOT EXISTS hm (
         hm_id INT AUTO_INCREMENT PRIMARY COMMENT '序号',
         hm_standard VARCHAR(255) COMMENT '标准',
-        hm_specification VARCHAR(255) UNIQUE NOT NULL COMMENT '规格',
+        hm_specification VARCHAR(255) NOT NULL COMMENT '规格',
         hm_h DOUBLE NOT NULL COMMENT '高度，单位：mm',
         hm_b DOUBLE NOT NULL COMMENT '宽度，单位：mm',
         hm_t1 DOUBLE NOT NULL COMMENT '腹板厚度，单位：mm',

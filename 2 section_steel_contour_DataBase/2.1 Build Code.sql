@@ -222,3 +222,49 @@ CREATE TABLE
         h_other_wx DOUBLE NOT NULL COMMENT '截面模数x方向，单位：cm^3',
         h_other_wy DOUBLE NOT NULL COMMENT '截面模数y方向，单位：cm^3'
     ) COMMENT 'H型钢其他系列';
+
+    CREATE TABLE
+    IF NOT EXISTS i (
+        i_id INT AUTO_INCREMENT PRIMARY KEY COMMENT '序号',
+        i_standard VARCHAR(255) COMMENT '标准',
+        i_specification VARCHAR(255) NOT NULL COMMENT '规格',
+        i_h DOUBLE NOT NULL COMMENT '高度，单位：mm',
+        i_b DOUBLE NOT NULL COMMENT '腿宽度，单位：mm',
+        i_d DOUBLE NOT NULL COMMENT '腰厚度，单位：mm',
+        i_t DOUBLE NOT NULL COMMENT '腿中间厚度，单位：mm',
+        i_r DOUBLE NOT NULL COMMENT '内圆弧半径，单位：mm',
+        i_r1 DOUBLE NOT NULL COMMENT '腿端圆弧半径，单位：mm',
+        i_sc DOUBLE NOT NULL COMMENT '截面面积，单位：cm^2',
+        i_weight DOUBLE NOT NULL COMMENT '理论重量，单位：kg/m',
+        i_se DOUBLE NOT NULL COMMENT '外表面积，单位：m^2/m',
+        i_ix DOUBLE NOT NULL COMMENT '惯性矩x方向，单位：cm^4',
+        i_iy DOUBLE NOT NULL COMMENT '惯性矩y方向，单位：cm^4',
+        i_rx DOUBLE NOT NULL COMMENT '惯性半径x方向，单位：cm',
+        i_ry DOUBLE NOT NULL COMMENT '惯性半径y方向，单位：cm',
+        i_wx DOUBLE NOT NULL COMMENT '截面模数x方向，单位：cm^3',
+        i_wy DOUBLE NOT NULL COMMENT '截面模数y方向，单位：cm^3'
+    )  COMMENT '工字钢';
+
+    CREATE TABLE
+    IF NOT EXISTS c (
+        c_id INT AUTO_INCREMENT PRIMARY KEY COMMENT '序号',
+        c_standard VARCHAR(255) COMMENT '标准',
+        c_specification VARCHAR(255) NOT NULL COMMENT '规格',
+        c_h DOUBLE NOT NULL COMMENT '高度，单位：mm',
+        c_b DOUBLE NOT NULL COMMENT '腿宽度，单位：mm',
+        c_d DOUBLE NOT NULL COMMENT '腰厚度，单位：mm',
+        c_t DOUBLE NOT NULL COMMENT '腿中间厚度，单位：mm',
+        c_r DOUBLE NOT NULL COMMENT '内圆弧半径，单位：mm',
+        c_r1 DOUBLE NOT NULL COMMENT '腿端圆弧半径，单位：mm',
+        c_sc DOUBLE NOT NULL COMMENT '截面面积，单位：cm^2',
+        c_weight DOUBLE NOT NULL COMMENT '理论重量，单位：kg/m',
+        c_se DOUBLE NOT NULL COMMENT '外表面积，单位：m^2/m',
+        c_ix DOUBLE NOT NULL COMMENT '惯性矩x方向，单位：cm^4',
+        c_iy DOUBLE NOT NULL COMMENT '惯性矩y方向，单位：cm^4',
+        c_iy1 DOUBLE NOT NULL COMMENT '惯性矩y1方向，单位：cm^4',
+        c_rx DOUBLE NOT NULL COMMENT '惯性半径x方向，单位：cm',
+        c_ry DOUBLE NOT NULL COMMENT '惯性半径y方向，单位：cm',
+        c_wx DOUBLE NOT NULL COMMENT '截面模数x方向，单位：cm^3',
+        c_wy DOUBLE NOT NULL COMMENT '截面模数y方向，单位：cm^3',
+        c_z0 DOUBLE NOT NULL COMMENT '重心距离，单位：cm'
+    )  COMMENT '槽钢';

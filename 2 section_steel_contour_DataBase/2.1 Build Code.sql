@@ -49,9 +49,9 @@ CREATE TABLE
 
 CREATE TABLE
     IF NOT EXISTS ht (
-        ht_id INT AUTO_INCREMENT PRIMARY COMMENT '序号',
+        ht_id INT AUTO_INCREMENT PRIMARY KEY COMMENT '序号',
         ht_standard VARCHAR(255) COMMENT '标准',
-        ht_specification VARCHAR(255) UNIQUE NOT NULL COMMENT '规格',
+        ht_specification VARCHAR(255) NOT NULL COMMENT '规格',
         ht_h DOUBLE NOT NULL COMMENT '高度，单位：mm',
         ht_b DOUBLE NOT NULL COMMENT '宽度，单位：mm',
         ht_t1 DOUBLE NOT NULL COMMENT '腹板厚度，单位：mm',
@@ -70,7 +70,7 @@ CREATE TABLE
 
 CREATE TABLE
     IF NOT EXISTS hw (
-        hw_id INT AUTO_INCREMENT PRIMARY COMMENT '序号',
+        hw_id INT AUTO_INCREMENT PRIMARY KEY COMMENT '序号',
         hw_standard VARCHAR(255) COMMENT '标准',
         hw_specification VARCHAR(255) UNIQUE NOT NULL COMMENT '规格',
         hw_h DOUBLE NOT NULL COMMENT '高度，单位：mm',

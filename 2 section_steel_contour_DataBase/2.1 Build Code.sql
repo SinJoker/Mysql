@@ -6,7 +6,7 @@ ALTER DATABASE section_steel_contour COMMENT='型钢截面数据库';
 USE section_steel_contour;
 
 CREATE TABLE
-    IF NOT EXISTS hm (
+    IF NOT EXISTS h_hm (
         hm_id INT AUTO_INCREMENT PRIMARY KEY COMMENT '序号',
         hm_standard VARCHAR(255) COMMENT '标准',
         hm_specification VARCHAR(255) NOT NULL COMMENT '规格',
@@ -27,7 +27,7 @@ CREATE TABLE
     )  COMMENT 'HM型钢';
 
 CREATE TABLE
-    IF NOT EXISTS hn (
+    IF NOT EXISTS h_hn (
         hn_id INT AUTO_INCREMENT PRIMARY KEY COMMENT '序号',
         hn_standard VARCHAR(255) COMMENT '标准',
         hn_specification VARCHAR(255) NOT NULL COMMENT '规格',
@@ -48,7 +48,7 @@ CREATE TABLE
     ) COMMENT 'HN型钢';
 
 CREATE TABLE
-    IF NOT EXISTS ht (
+    IF NOT EXISTS h_ht (
         ht_id INT AUTO_INCREMENT PRIMARY KEY COMMENT '序号',
         ht_standard VARCHAR(255) COMMENT '标准',
         ht_specification VARCHAR(255) NOT NULL COMMENT '规格',
@@ -69,10 +69,10 @@ CREATE TABLE
     ) COMMENT 'HT型钢';
 
 CREATE TABLE
-    IF NOT EXISTS hw (
+    IF NOT EXISTS h_hw (
         hw_id INT AUTO_INCREMENT PRIMARY KEY COMMENT '序号',
         hw_standard VARCHAR(255) COMMENT '标准',
-        hw_specification VARCHAR(255) UNIQUE NOT NULL COMMENT '规格',
+        hw_specification VARCHAR(255) NOT NULL COMMENT '规格',
         hw_h DOUBLE NOT NULL COMMENT '高度，单位：mm',
         hw_b DOUBLE NOT NULL COMMENT '宽度，单位：mm',
         hw_t1 DOUBLE NOT NULL COMMENT '腹板厚度，单位：mm',
@@ -90,10 +90,10 @@ CREATE TABLE
     ) COMMENT 'HW型钢';
 
 CREATE TABLE
-    IF NOT EXISTS tm (
-        tm_id INT AUTO_INCREMENT PRIMARY COMMENT '序号',
+    IF NOT EXISTS h_tm (
+        tm_id INT AUTO_INCREMENT PRIMARY KEY COMMENT '序号',
         tm_standard VARCHAR(255) COMMENT '标准',
-        tm_specification VARCHAR(255) UNIQUE NOT NULL COMMENT '规格',
+        tm_specification VARCHAR(255) NOT NULL COMMENT '规格',
         tm_h DOUBLE NOT NULL COMMENT '高度，单位：mm',
         tm_b DOUBLE NOT NULL COMMENT '宽度，单位：mm',
         tm_t1 DOUBLE NOT NULL COMMENT '腹板厚度，单位：mm',
@@ -109,14 +109,14 @@ CREATE TABLE
         tm_wx DOUBLE NOT NULL COMMENT '截面模数x方向，单位：cm^3',
         tm_wy DOUBLE NOT NULL COMMENT '截面模数y方向，单位：cm^3',
         tm_cx DOUBLE NOT NULL COMMENT '重心，单位：cm',
-        tm_specification_h VARCHAR - (255) COMMENT '对应h型钢规格'
+        tm_specification_h VARCHAR(255) COMMENT '对应h型钢规格'
     ) COMMENT 'TM型钢';
 
 CREATE TABLE
-    IF NOT EXISTS tn (
-        tn_id INT AUTO_INCREMENT PRIMARY COMMENT '序号',
+    IF NOT EXISTS h_tn (
+        tn_id INT AUTO_INCREMENT PRIMARY KEY COMMENT '序号',
         tn_standard VARCHAR(255) COMMENT '标准',
-        tn_specification VARCHAR(255) UNIQUE NOT NULL COMMENT '规格',
+        tn_specification VARCHAR(255) NOT NULL COMMENT '规格',
         tn_h DOUBLE NOT NULL COMMENT '高度，单位：mm',
         tn_b DOUBLE NOT NULL COMMENT '宽度，单位：mm',
         tn_t1 DOUBLE NOT NULL COMMENT '腹板厚度，单位：mm',
@@ -136,10 +136,10 @@ CREATE TABLE
     ) COMMENT 'TN型钢';
 
 CREATE TABLE
-    IF NOT EXISTS tw (
-        tw_id INT AUTO_INCREMENT PRIMARY COMMENT '序号',
+    IF NOT EXISTS h_tw (
+        tw_id INT AUTO_INCREMENT PRIMARY KEY COMMENT '序号',
         tw_standard VARCHAR(255) COMMENT '标准',
-        tw_specification VARCHAR(255) UNIQUE NOT NULL COMMENT '规格',
+        tw_specification VARCHAR(255)  NOT NULL COMMENT '规格',
         tw_h DOUBLE NOT NULL COMMENT '高度，单位：mm',
         tw_b DOUBLE NOT NULL COMMENT '宽度，单位：mm',
         tw_t1 DOUBLE NOT NULL COMMENT '腹板厚度，单位：mm',
@@ -159,11 +159,11 @@ CREATE TABLE
     ) COMMENT 'TW型钢';
 
 CREATE TABLE
-    IF NOT EXISTS u (
-        u_id INT AUTO_INCREMENT PRIMARY COMMENT '序号',
+    IF NOT EXISTS h_u (
+        u_id INT AUTO_INCREMENT PRIMARY  KEY COMMENT '序号',
         u_standard VARCHAR(255) COMMENT '标准',
         u_serial VARCHAR(255) COMMENT '系列号',
-        u_specification VARCHAR(255) UNIQUE NOT NULL COMMENT '规格',
+        u_specification VARCHAR(255) NOT NULL COMMENT '规格',
         u_h DOUBLE NOT NULL COMMENT '高度，单位：mm',
         u_b DOUBLE NOT NULL COMMENT '宽度，单位：mm',
         u_t1 DOUBLE NOT NULL COMMENT '腹板厚度，单位：mm',
@@ -181,11 +181,11 @@ CREATE TABLE
     ) COMMENT 'U系列型钢';
 
 CREATE TABLE
-    IF NOT EXISTS w (
-        w_id INT AUTO_INCREMENT PRIMARY COMMENT '序号',
+    IF NOT EXISTS h_w (
+        w_id INT AUTO_INCREMENT PRIMARY KEY COMMENT '序号',
         w_standard VARCHAR(255) COMMENT '标准',
         w_serial VARCHAR(255) COMMENT '系列号',
-        w_specification VARCHAR(255) UNIQUE NOT NULL COMMENT '规格',
+        w_specification VARCHAR(255) NOT NULL COMMENT '规格',
         w_h DOUBLE NOT NULL COMMENT '高度，单位：mm',
         w_b DOUBLE NOT NULL COMMENT '宽度，单位：mm',
         w_t1 DOUBLE NOT NULL COMMENT '腹板厚度，单位：mm',
@@ -204,9 +204,9 @@ CREATE TABLE
 
 CREATE TABLE
     IF NOT EXISTS h_other (
-        h_other_id INT AUTO_INCREMENT PRIMARY COMMENT '序号',
+        h_other_id INT AUTO_INCREMENT PRIMARY KEY COMMENT '序号',
         h_other_standard VARCHAR(255) COMMENT '标准',
-        h_other_specification VARCHAR(255) UNIQUE NOT NULL COMMENT '规格',
+        h_other_specification VARCHAR(255) NOT NULL COMMENT '规格',
         h_other_h DOUBLE NOT NULL COMMENT '高度，单位：mm',
         h_other_b DOUBLE NOT NULL COMMENT '宽度，单位：mm',
         h_other_t1 DOUBLE NOT NULL COMMENT '腹板厚度，单位：mm',

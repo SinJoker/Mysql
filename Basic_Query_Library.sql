@@ -14,7 +14,7 @@ DROP DATABASE IF EXISTS test;
 SELECT DATABASE();
 
 # 切换数据库
-USE test;
+USE section_steel_contour;
 
 # 显示当前数据库的所有表
 SHOW TABLES;
@@ -46,3 +46,4 @@ DELETE FROM test WHERE id=1;
 
 # 查询数据
 SELECT * FROM test;
+

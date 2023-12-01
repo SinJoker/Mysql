@@ -1,5 +1,5 @@
 INSERT INTO
-    hm (
+    h_hm (
         hm_standard,
         hm_specification,
         hm_h,

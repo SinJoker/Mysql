@@ -1,5 +1,5 @@
 INSERT INTO
-    section_steel_contour.ht (
+    section_steel_contour.h_ht (
         ht_id,
         ht_standard,
         ht_specification,
@@ -39,7 +39,7 @@ VALUES (
     );
 
 INSERT INTO
-    section_steel_contour.ht (
+    section_steel_contour.h_ht (
         ht_id,
         ht_standard,
         ht_specification,
@@ -79,7 +79,7 @@ VALUES (
     );
 
 INSERT INTO
-    section_steel_contour.ht (
+    section_steel_contour.h_ht (
         ht_id,
         ht_standard,
         ht_specification,
@@ -119,7 +119,7 @@ VALUES (
     );
 
 INSERT INTO
-    section_steel_contour.ht (
+    section_steel_contour.h_ht (
         ht_id,
         ht_standard,
         ht_specification,
@@ -159,7 +159,7 @@ VALUES (
     );
 
 INSERT INTO
-    section_steel_contour.ht (
+    section_steel_contour.h_ht (
         ht_id,
         ht_standard,
         ht_specification,
@@ -199,7 +199,7 @@ VALUES (
     );
 
 INSERT INTO
-    section_steel_contour.ht (
+    section_steel_contour.h_ht (
         ht_id,
         ht_standard,
         ht_specification,
@@ -239,7 +239,7 @@ VALUES (
     );
 
 INSERT INTO
-    section_steel_contour.ht (
+    section_steel_contour.h_ht (
         ht_id,
         ht_standard,
         ht_specification,
@@ -279,7 +279,7 @@ VALUES (
     );
 
 INSERT INTO
-    section_steel_contour.ht (
+    section_steel_contour.h_ht (
         ht_id,
         ht_standard,
         ht_specification,
@@ -319,7 +319,7 @@ VALUES (
     );
 
 INSERT INTO
-    section_steel_contour.ht (
+    section_steel_contour.h_ht (
         ht_id,
         ht_standard,
         ht_specification,
@@ -359,7 +359,7 @@ VALUES (
     );
 
 INSERT INTO
-    section_steel_contour.ht (
+    section_steel_contour.h_ht (
         ht_id,
         ht_standard,
         ht_specification,
@@ -399,7 +399,7 @@ VALUES (
     );
 
 INSERT INTO
-    section_steel_contour.ht (
+    section_steel_contour.h_ht (
         ht_id,
         ht_standard,
         ht_specification,
@@ -439,7 +439,7 @@ VALUES (
     );
 
 INSERT INTO
-    section_steel_contour.ht (
+    section_steel_contour.h_ht (
         ht_id,
         ht_standard,
         ht_specification,
@@ -479,7 +479,7 @@ VALUES (
     );
 
 INSERT INTO
-    section_steel_contour.ht (
+    section_steel_contour.h_ht (
         ht_id,
         ht_standard,
         ht_specification,
@@ -519,7 +519,7 @@ VALUES (
     );
 
 INSERT INTO
-    section_steel_contour.ht (
+    section_steel_contour.h_ht (
         ht_id,
         ht_standard,
         ht_specification,
@@ -559,7 +559,7 @@ VALUES (
     );
 
 INSERT INTO
-    section_steel_contour.ht (
+    section_steel_contour.h_ht (
         ht_id,
         ht_standard,
         ht_specification,
@@ -599,7 +599,7 @@ VALUES (
     );
 
 INSERT INTO
-    section_steel_contour.ht (
+    section_steel_contour.h_ht (
         ht_id,
         ht_standard,
         ht_specification,
@@ -639,7 +639,7 @@ VALUES (
     );
 
 INSERT INTO
-    section_steel_contour.ht (
+    section_steel_contour.h_ht (
         ht_id,
         ht_standard,
         ht_specification,
@@ -679,7 +679,7 @@ VALUES (
     );
 
 INSERT INTO
-    section_steel_contour.ht (
+    section_steel_contour.h_ht (
         ht_id,
         ht_standard,
         ht_specification,
@@ -719,7 +719,7 @@ VALUES (
     );
 
 INSERT INTO
-    section_steel_contour.ht (
+    section_steel_contour.h_ht (
         ht_id,
         ht_standard,
         ht_specification,
@@ -759,7 +759,7 @@ VALUES (
     );
 
 INSERT INTO
-    section_steel_contour.ht (
+    section_steel_contour.h_ht (
         ht_id,
         ht_standard,
         ht_specification,
@@ -799,7 +799,7 @@ VALUES (
     );
 
 INSERT INTO
-    section_steel_contour.ht (
+    section_steel_contour.h_ht (
         ht_id,
         ht_standard,
         ht_specification,
@@ -839,7 +839,7 @@ VALUES (
     );
 
 INSERT INTO
-    section_steel_contour.ht (
+    section_steel_contour.h_ht (
         ht_id,
         ht_standard,
         ht_specification,
@@ -879,7 +879,7 @@ VALUES (
     );
 
 INSERT INTO
-    section_steel_contour.ht (
+    section_steel_contour.h_ht (
         ht_id,
         ht_standard,
         ht_specification,
@@ -919,7 +919,7 @@ VALUES (
     );
 
 INSERT INTO
-    section_steel_contour.ht (
+    section_steel_contour.h_ht (
         ht_id,
         ht_standard,
         ht_specification,
@@ -959,7 +959,7 @@ VALUES (
     );
 
 INSERT INTO
-    section_steel_contour.ht (
+    section_steel_contour.h_ht (
         ht_id,
         ht_standard,
         ht_specification,
@@ -999,7 +999,7 @@ VALUES (
     );
 
 INSERT INTO
-    section_steel_contour.ht (
+    section_steel_contour.h_ht (
         ht_id,
         ht_standard,
         ht_specification,
@@ -1039,7 +1039,7 @@ VALUES (
     );
 
 INSERT INTO
-    section_steel_contour.ht (
+    section_steel_contour.h_ht (
         ht_id,
         ht_standard,
         ht_specification,

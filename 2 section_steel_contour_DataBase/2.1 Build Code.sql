@@ -268,3 +268,29 @@ CREATE TABLE
         c_wy DOUBLE NOT NULL COMMENT '截面模数y方向，单位：cm^3',
         c_z0 DOUBLE NOT NULL COMMENT '重心距离，单位：cm'
     )  COMMENT '槽钢';
+
+        CREATE TABLE
+    IF NOT EXISTS le (
+        le_id INT AUTO_INCREMENT PRIMARY KEY COMMENT '序号',
+        le_standard VARCHAR(255) COMMENT '标准',
+        le_specification VARCHAR(255) NOT NULL COMMENT '规格',
+        le_b DOUBLE NOT NULL COMMENT '边宽度，单位：mm',
+        le_d DOUBLE NOT NULL COMMENT '边厚度，单位：mm',
+        le_r DOUBLE NOT NULL COMMENT '内圆弧半径，单位：mm',
+        le_r1 DOUBLE NOT NULL COMMENT '边端圆弧半径，单位：mm',
+        le_sc DOUBLE NOT NULL COMMENT '截面面积，单位：cm^2',
+        le_weight DOUBLE NOT NULL COMMENT '理论重量，单位：kg/m',
+        le_se DOUBLE NOT NULL COMMENT '外表面积，单位：m^2/m',
+        le_ix DOUBLE NOT NULL COMMENT '惯性矩x方向，单位：cm^4',
+        le_ix1 DOUBLE NOT NULL COMMENT '惯性矩x1方向，单位：cm^4',
+        le_ix0 DOUBLE NOT NULL COMMENT '惯性矩x0方向，单位：cm^4',
+        le_iy0 DOUBLE NOT NULL COMMENT '惯性矩y0方向，单位：cm^4',
+        le_rx DOUBLE NOT NULL COMMENT '惯性半径x方向，单位：cm',
+        le_rx0 DOUBLE NOT NULL COMMENT '惯性半径x0方向，单位：cm',
+        le_ry0 DOUBLE NOT NULL COMMENT '惯性半径y0方向，单位：cm',
+        le_wx DOUBLE NOT NULL COMMENT '截面模数x方向，单位：cm^3',
+        le_wx0 DOUBLE NOT NULL COMMENT '截面模数x0方向，单位：cm^3',
+        le_wy DOUBLE NOT NULL COMMENT '截面模数y方向，单位：cm^3',
+        le_wy0 DOUBLE NOT NULL COMMENT '截面模数y0方向，单位：cm^3',
+        le_z0 DOUBLE NOT NULL COMMENT '重心距离，单位：cm'
+    )  COMMENT '等边角钢';
